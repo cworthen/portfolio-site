@@ -6,6 +6,7 @@ html, body {
 
 h4{
   margin-top: 30px;
+  font-size:1.6rem;
 }
 
   .summary {
@@ -58,12 +59,13 @@ h4{
   transition: all .4s ease-in-out; }
 
 .caption i {
-  font-size: 80px;
+  font-size: 65px;
   color: white;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+   }
 
 .overlay .caption:hover:after {
   opacity: 1; }
@@ -83,7 +85,7 @@ h4{
   transition: all .4s ease-in-out; }
 
   .description{
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     text-transform: uppercase;
     color: white;
     position: absolute;
@@ -345,6 +347,10 @@ footer p{
 
 #portfolio{
   padding:10px;
+}
+
+.description{
+  padding-bottom:80px;
 }
 
 }
