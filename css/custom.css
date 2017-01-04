@@ -286,6 +286,35 @@ i[class^="fa fa"]:before {
 .btn-lg {
   padding-top: 10px; }
 
+  .code{
+    background-color: #272626;
+    color:#fff;
+    margin: 2.5em 0 2.5em 0;
+  }
+
+  .value{
+    color:#CC99CC;
+  }
+
+  .string{
+    color:#d5d883;
+  }
+
+  .comments{
+    color:#a9a9a9;
+  }
+
+  .math{
+    color:#ffd479;
+  }
+
+  .method{
+    color:#a8d3c2;
+  }
+  .randomColor{
+    color:#a7c5e6;
+  }
+
   .footer {
   background: #252525;
   padding-bottom: 2em;
@@ -301,6 +330,7 @@ i[class^="fa fa"]:before {
   text-transform: uppercase;
   background: #3c763d;
   opacity: .88;}
+
 
 footer p{
   text-align: center;

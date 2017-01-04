@@ -67,87 +67,103 @@
 
   <div class="container">
     <div class="col-md-8 col-md-offset-2">
-    <a href="http://candaceworthen.com/colorgame/">
-      <h2 class="header">RGB Color Game</h2>
-    <img src="css/images/png-mkups/colorgame.png" alt="colorgame" class="portfolio-ex"></a>
+      <a href="http://candaceworthen.com/colorgame/">
+        <h2 class="header">RGB Color Game</h2>
+        <img src="css/images/png-mkups/colorgame.png" alt="colorgame" class="portfolio-ex"></a>
 
-      <h4>Summary:</h4>
-      <p>
-        The Great RGB Color Game was created as part of the Web Developer Bootcamp by Colt Steele.
-         I continued with the Color game and added several tweaks not included in the course.
-         Aiming to dig deeper into Javascript but also get hands-on experience, this project has
-         really helped further my understanding of DOM Manipulation such as selecting DOM elements, creating
-         event listeners and dynamically changing CSS styles to elements.
-      </p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-      <h4>Challenges:</h4>
-      <p>A challenge I had during this project was that my color selection wasn't
-        matching the random provided RGB color at the top of the page, causing correct
-        choices to show as "Wrong". The solution was to put spaces after the commas
-        in the RGB color value.
-
-        This made sure that my return value for the randomColor function
-
-         "rgb(" + r + ", " + g + ", " + b + ")";
-
-        matches what's displayed on top the screen "rgb(255, 105, 98)"
-        Without the spaces after the commas rgb(255,105,98) the selected square
-        would never match the randomly provided RGB color.
-           </p>
-
-
-      <h4>What I learned:</h4>
-      <p>I learned how to pair logic with advanced DOM Manipulation. This has helpled
-        to move forward and add several features to the game, including
-        sounds effects and a toggle button to turn sound on/off, a "help" button
-        for instructions on how to play the game and added level featuring 9 squares.
-      </p>
-
-      <h4>Technology used:</h4>
-      <p>HTML5, CSS3, Javascript</p>
-
-      <!-- Large button view project -->
-
-      <div class="btn-group">
-        <button class="btn btn-default btn-lg"
-        onclick="window.location='http://candaceworthen.com/colorgame/';">
-        View Project <!--change to colorgame website -->
-      </button>
+        <h4>Summary:</h4>
+        <p>
+          The Great RGB Color Game was created as part of the Web Developer Bootcamp by Colt Steele.
+          I continued with the Color game and added several tweaks not included in the course.
+          Aiming to dig deeper into Javascript but also get hands-on experience, this project has
+          really helped further my understanding of DOM Manipulation such as selecting DOM elements, creating
+          event listeners and dynamically changing CSS styles to elements.
+        </p>
+      </div>
     </div>
 
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <h4>Challenges:</h4>
+        <p>A challenge I had during this project was that my color selection wasn't
+          matching the random provided RGB color at the top of the page, causing correct
+          choices to show as "Wrong". The solution was to put spaces after the commas
+          in the RGB color value.
 
-  </div>
-</div>
-<!---footer area-->
+          This made sure that my return value for the randomColor function shown below:
 
-<div class="col-lg-12 footer">
-  <footer>
-   <p>Say Hello</p>
-    <a href="https://twitter.com/CandaceWorthen">
-      <i class="fa fa-twitter socialmedia"  aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/candaceworthen">
-        <i class="fa fa-linkedin socialmedia" aria-hidden="true"></i></a>
-        <a href="https://github.com/cworthen">
-          <i class="fa fa-github-alt socialmedia" aria-hidden="true"></i></a>
-          <a href="https://vimeo.com/candaceworthen">
-            <i class="fa fa-vimeo socialmedia" aria-hidden="true"></i></a>
-            <a href="mailto:candace.worthen@gmail.com?Subject=Hello">
-            <i class="fa fa-envelope socialmedia" aria-hidden="true"></i></a>
+          <pre class="code">
 
-      </footer>
-    </div>
+            <span class="value">function</span> <span class="randomColor">randomColor</span>(){
 
-    <div class="col-lg-12 copyright"> copyright @ candace worthen  2016</div>
+              <span class="comments">//pick a red from 0 - 255</span>
+              <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
 
-    <!--jquery plugins-->
-    <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+              <span class="comments">//pick a green from 0 - 255</span>
+              <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
 
-    <!-- End Document
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  </body>
-  </html>
+              <span class="comments">//pick a method from 0 - 255</span>
+              <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
+
+              <span class="value">return</span> <span class="string">"rgb("</span>+ r +<span class="string"> ", " </span>+ g +<span class="string"> ", " </span>+ b + <span class="quotes">")"</span>;
+
+            }</pre>
+
+
+            matches what's displayed on top the screen "rgb(255, 105, 98)" .
+            Without the spaces after the commas "rgb(255,105,98)" 
+            the selected square would never match and choices would always show as
+            wrong.</p>
+
+
+            <h4>What I learned:</h4>
+            <p>I learned how to pair logic with advanced DOM Manipulation,
+              which allowed me to add several features to the game, including
+              sounds effects and a toggle button to turn sound on/off and a "help" button
+              for instructions on how to play the game.
+            </p>
+
+            <h4>Technology used:</h4>
+            <p>HTML5, CSS3, Javascript</p>
+
+            <!-- Large button view project -->
+
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg"
+              onclick="window.location='http://candaceworthen.com/colorgame/';">
+              View Project <!--change to colorgame website -->
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+      <!---footer area-->
+
+      <div class="col-lg-12 footer">
+        <footer>
+          <p>Say Hello</p>
+          <a href="https://twitter.com/CandaceWorthen">
+            <i class="fa fa-twitter socialmedia"  aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/candaceworthen">
+              <i class="fa fa-linkedin socialmedia" aria-hidden="true"></i></a>
+              <a href="https://github.com/cworthen">
+                <i class="fa fa-github-alt socialmedia" aria-hidden="true"></i></a>
+                <a href="https://vimeo.com/candaceworthen">
+                  <i class="fa fa-vimeo socialmedia" aria-hidden="true"></i></a>
+                  <a href="mailto:candace.worthen@gmail.com?Subject=Hello">
+                    <i class="fa fa-envelope socialmedia" aria-hidden="true"></i></a>
+
+                  </footer>
+                </div>
+
+                <div class="col-lg-12 copyright"> copyright @ candace worthen  2016</div>
+
+                <!--jquery plugins-->
+                <script src="js/jquery-2.2.1.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+
+                <!-- End Document
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+              </body>
+              </html>
