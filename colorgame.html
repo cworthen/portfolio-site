@@ -58,7 +58,6 @@
             <li><a href="index.html#portfolio">Portfolio</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="https://candaceworthen.wordpress.com">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -69,6 +68,7 @@
     <div class="col-md-8 col-md-offset-2">
       <a href="http://candaceworthen.com/colorgame/">
         <h2 class="header">RGB Color Game</h2>
+        <hr class="portfolio-hr">
         <img src="css/images/png-mkups/colorgame.png" alt="colorgame" class="portfolio-ex"></a>
 
         <h4>Summary:</h4>
@@ -86,11 +86,11 @@
       <div class="col-md-8 col-md-offset-2">
         <h4>Challenges:</h4>
         <p>A challenge I had during this project was that my color selection wasn't
-          matching the random provided RGB color at the top of the page, causing correct
+          matching the provided RGB color at the top of the page, causing correct
           choices to show as "Wrong". The solution was to put spaces after the commas
           in the RGB color value.
 
-          This made sure that my return value for the randomColor function shown below:
+          This made sure that my return value for the randomColor function (shown below):
 
           <pre class="code">
 
@@ -110,8 +110,8 @@
             }</pre>
 
 
-            matches what's displayed on top the screen "rgb(255, 105, 98)" .
-            Without the spaces after the commas "rgb(255,105,98)" 
+            matches what's displayed on top the screen "rgb(255, 105, 98)".
+            Without the spaces after the commas "rgb(255,105,98)"
             the selected square would never match and choices would always show as
             wrong.</p>
 
@@ -142,22 +142,26 @@
 
       <div class="col-lg-12 footer">
         <footer>
-          <p>Say Hello</p>
-          <a href="https://twitter.com/CandaceWorthen">
-            <i class="fa fa-twitter socialmedia"  aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/candaceworthen">
-              <i class="fa fa-linkedin socialmedia" aria-hidden="true"></i></a>
-              <a href="https://github.com/cworthen">
-                <i class="fa fa-github-alt socialmedia" aria-hidden="true"></i></a>
-                <a href="https://vimeo.com/candaceworthen">
-                  <i class="fa fa-vimeo socialmedia" aria-hidden="true"></i></a>
-                  <a href="mailto:candace.worthen@gmail.com?Subject=Hello">
-                    <i class="fa fa-envelope socialmedia" aria-hidden="true"></i></a>
+          <div class="row">
+      <p>Get in Touch</p>
+      <div class="socialmedia">
+        <a href="https://twitter.com/CandaceWorthen">
+          <i class="fa fa-twitter"  aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/candaceworthen">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/cworthen">
+              <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+              <a href="https://vimeo.com/candaceworthen">
+                <i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                <a href="mailto:candace.worthen@gmail.com?Subject=Hello">
+                <i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+      </footer>
+          </div>
 
-                  </footer>
-                </div>
+            <div class="col-lg-12 copyright"> copyright @ candace worthen  2016</div>
+          </div>
 
-                <div class="col-lg-12 copyright"> copyright @ candace worthen  2016</div>
 
                 <!--jquery plugins-->
                 <script src="js/jquery-2.2.1.min.js"></script>
