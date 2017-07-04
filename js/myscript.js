@@ -1,27 +1,24 @@
-
-// bounce effect on hover
-$(".icons").hover(function() {
-      $(this).effect("bounce", { times: 1 }, 480);
+// slides in text when document is loaded
+$(document).ready(function(){
+  $('.greeting p').addClass('animated slideInRight');
 });
+
 
 // adding smooth scroll
 
-$('a[href*="#"]:not([href="#"])').on('click', function(e) {
+$('a[href*="#"]:not([href="#"])').on('click', function (e) {
 
-   // prevent default anchor click behavior
-   e.preventDefault();
+  // prevent default anchor click behavior
+  e.preventDefault();
 
-   // store hash
-   var hash = this.hash;
+  // store hash
+  var hash = this.hash;
 
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 1050, function(){
+  // animate
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 1050, function (){
 
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
+  });
 
 });

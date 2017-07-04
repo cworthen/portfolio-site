@@ -14,7 +14,9 @@
 <meta name="keywords" content="Candace, Worthen, code, web, developer">
 
 
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather+Sans" rel="stylesheet">
 
 
 <!--Bootstrap links-->
@@ -26,6 +28,9 @@
 <!--My CSS -->
 
 <link rel="stylesheet" href="css/custom.css">
+
+<!--other links -->
+ <link rel="stylesheet" href="css/animate.css">
 
 <!--google-analytics -->
 <script>
@@ -41,7 +46,7 @@ ga('send', 'pageview');
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 
   <!--start of the nav section -->
 
@@ -57,7 +62,7 @@ ga('send', 'pageview');
       </div>
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
@@ -70,118 +75,136 @@ ga('send', 'pageview');
 
 
 
-
-<div id="home" class="container-fluid">
+<section id="home" class="container-fluid home-section">
           <div class="cover">
             <div class="row">
-    <div class="col-md-12 col-md-12 col-sm-12">
+    <div class="col-md-12">
      <div class="greeting">
       <h1>Hello, I'm Candace</h1>
-      <p>a web developer</p>
-      <a href="#portfolio" class="btn btn-default btn-lg center-block" role="button">Learn More</a>
+      <p>web developer</p>
+      <a href="#portfolio"><button type="button" class="btn btn-default">Learn More</button></a>
+
     </div>
-
-
 </div>
 
             </div>
          </div>
-       </div>
+       </section>
 
-  <!--section2/portfolio overview-->
 
-  <div id="portfolio" class="container-fluid">
-    <h2>Portfolio</h2>
+
+  <!--section2/portfolio section-->
+
+
+  <section id="portfolio" class="container-fluid portfolio-section">
+    <h2 class="section">Portfolio</h2>
     <hr>
+
 <div class="row">
-  <div class="item">
-    <div class="col-md-6 col-xs-12 padding">
-    <a href="resort.html">
-      <div class="overlay">
-        <div class="caption">
-          <i class="fa fa-search-plus" aria-hidden="true"></i>
-          <div class="description">
-            <h4>Pacific Trails Resort</h4>
-            <p>HTML and CSS website</p>
-          </div>
-        </div>
-        <img src="css/images/pacifictrails.png" alt="project image" class="portfolio-pic"></div></a>
-      </div>
-    </div>
 
-
-      <div class="col-md-6 col-xs-12 padding">
-      <a href="takepsd.html">
+      <div class="col-md-4 col-sm-6 col-xs-12 padding">
+            <div class="project-item">
+          <a data-target="#projectModal_5" data-toggle="modal">
         <div class="overlay">
           <div class="caption">
-            <i class="fa fa-search-plus" aria-hidden="true"></i>
-            <div class="description">
-              <h4>Take App landing page</h4>
-              <p> PSD template to HTML</p>
+           <div class="project-title">
+             <p>The Pawsproject</p>
+           </div>
+           </div>
+            <img src="css/images/pawsproject.png" alt="project image" class="portfolio-pic">
+          </div>
+          <div class="description">
+               <p>Custom Wordpress theme </p>
+        </div>
+        </a>
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 padding">
+          <div class="project-item">
+      <a data-target="#projectModal_2" data-toggle="modal">
+        <div class="overlay">
+          <div class="caption">
+            <div class="project-title">
+              <p>Take App</p>
             </div>
           </div>
-            <img src="css/images/takeapp.png" alt="project image" class="portfolio-pic"></div></a>
+            <img src="css/images/takeapp.png" alt="project image" class="portfolio-pic"></div>
+            <div class="description">
+                <p>PSD template to responsive landing page</p>
+              </div>
+          </a>
         </div>
-<!--closes row -->
       </div>
 
-<div class="row">
-
-<div class="col-md-6 col-xs-12 padding">
-  <a href="alienform.html">
-    <div class="overlay">
-      <div class="caption">
-        <i class="fa fa-search-plus" aria-hidden="true"></i>
+      <div class= "col-md-4 col-sm-6 col-xs-12 padding">
+          <div class="project-item">
+        <a data-target="#projectModal_4" data-toggle="modal">
+      <div class="overlay">
+        <div class="caption">
+            <div class="project-title">
+           <p>RGB Color Game</p>
+         </div>
+         </div>
+          <img src="css/images/rgbagame.png" alt="project image" class="portfolio-pic">
+        </div>
           <div class="description">
-        <h4>Alien Abduction</h4>
-        <p>PHP form validation &amp; database</p>
-      </div>
-      </div>
-        <img src="css/images/adminpanel.png" alt="project image" class="portfolio-pic"></div></a>
-
+               <p>Javascript game</p>
+        </div>
+      </a>
+        </div>
       </div>
 
+<div class="clearfix visible-md-block visible-lg-block"></div>
 
-<div class="col-md-6 col-xs-12 padding">
-<a href="colorgame.html">
-<div class="overlay">
-  <div class="caption">
-    <i class="fa fa-search-plus" aria-hidden="true"></i>
-   <div class="description">
-     <h4>RGB Color Game</h4>
-     <p>Javascript</p>
-   </div>
-   </div>
-    <img src="css/images/rgbagame.png" alt="project image" class="portfolio-pic"></div></a>
+        <div class= "col-md-4 col-sm-6 col-xs-12 padding">
+          <div class="project-item">
+      <a data-target="#projectModal_3" data-toggle="modal">
+        <div class="overlay">
+          <div class="caption">
+            <div class="project-title">
+              <p>Alien Abduction</p>
+            </div>
+          </div>
+          <img src="css/images/adminpanel.png" alt="project image" class="portfolio-pic">
+        </div>
+            <div class="description">
+                <p>PHP form validation and database</p>
+              </div>
+          </a>
+        </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12 padding">
+                <div class="project-item">
+              <a data-target="#projectModal_1" data-toggle="modal">
+                <div class="overlay">
+                  <div class="caption">
+                    <div class="project-title">
+                      <p>Pacific Trails Resort</p>
+                    </div>
+                  </div>
+                  <img src="css/images/pacifictrails.png" alt="project image" class="portfolio-pic"></div>
+                  <div class="description">
+                      <p>Responsive HTML and CSS website</p>
+                    </div>
+                </a>
+              </div>
+                </div>
+
+
+    <!--closes row -->
   </div>
-  <!--closes row -->
-</div>
-
-
-<div class="row">
-  <div class=" col-md-6  col-xs-12 padding">
-  <a href="pawsproject.html">
-  <div class="overlay">
-    <div class="caption">
-      <i class="fa fa-search-plus" aria-hidden="true"></i>
-     <div class="description">
-       <h4>The Pawsproject</h4>
-       <p>Wordpress Theme Development</p>
-     </div>
-     </div>
-      <img src="css/images/pawsproject.png" alt="project image" class="portfolio-pic"></div></a>
-    </div>
-
 
 <!--closes row and container-->
 
-</div>
-</div>
+</section>
+
 
 <!--section3/about area-->
 
-<div id="about" class="container-fluid">
-  <h2>About</h2>
+<section id="about" class="container-fluid about-section">
+  <h2 class="section">About</h2>
   <hr class="about-hr">
   <div class="row">
     <div class=" col-lg-3 col-md-offset-1 col-md-4 col-sm-12">
@@ -196,25 +219,23 @@ ga('send', 'pageview');
           and solve real problems through my coding projects. In my spare time, I love walking around taking photos, watching scary movies and going to meet-ups
           to catch up with friends and meet new people.</p>
 
-          <p>Skills include HTML, CSS, Javascript/jQuery, PHP/MySQL, Command Line, mobile web development and responsive design.</p>
+          <p>Skills include HTML, CSS, Javascript, jQuery, PHP, Command Line, mobile web development and responsive design.</p>
 
-        <!--resume-->
-         <a href="candaceworthenresume.pdf" class="btn btn-default btn-lg" id="resume" role="button">see resume</a>
       </div>
 
 </div>
-</div>
+</section>
 <!---footer area-->
 
-<div id="contact">
+<section id="contact">
 <div class="col-lg-12 footer">
-  <footer>
+
     <div class="row">
+
 <p>Get in Touch</p>
 
-
-
 <div class="socialmedia">
+
   <a href="https://twitter.com/CandaceWorthen">
     <i class="fa fa-twitter"  aria-hidden="true"></i></a>
     <a href="https://www.linkedin.com/in/candaceworthen">
@@ -226,12 +247,419 @@ ga('send', 'pageview');
           <a href="mailto:candace.worthen@gmail.com?Subject=Hello">
           <i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
-</footer>
+          </div>
     </div>
-
       <div class="col-lg-12 copyright"> copyright @ candace worthen  2016</div>
+</section>
+
+
+
+<!---  portfolio modal 1  ---->
+
+<div class="modal fade" id="projectModal_1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+          <a href="http://candaceworthen.com/pacifictrailsresort/">
+            <h2 class="header">Pacific Trails Resort</h2>
+            <hr class="portfolio-hr">
+            <img src="css/images/png-mkups/pacifictrails.png" alt=" " class="img-responsive portfolio-ex"></a>
+
+            <ul class="list-inline">
+              <li>
+                <a href="https://github.com/cworthen/Pacific-Trails-Resort" class="code-link">
+                  <p class="git-link">see code</p>
+                  <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                </li>
+              <li>
+                <a href="http://candaceworthen.com/pacifictrailsresort/" class="code-link">
+                  <p class="web-link">view website</p>
+                   <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                 </li>
+            </ul>
+
+
+
+
+             <h4>Summary:</h4>
+             <p class="project-date">Completed: December 2015</p>
+             <p>During my enrollment in the Web Developement program at Delaware County Community college, I completed several courses including HTML5 and CSS3, PHP, Javascript/jQuery and mobile web development.
+              I created this website from scratch as part of the HTML/CSS course. The goal was to learn
+              how to build a responsive website using HTML5, CSS3 and media queries. I was given guidelines on what to add for the website and how to make it look. This process taught
+              me the basics of HTML and CSS such as building a navigation bar,
+              creating a table with cells and borders, adding an image, creating a footer and
+              linking to other pages. I also learned the different types of cascading styles sheets such as
+              (Internal, Embed, External and Inline) and how to use them.</p>
+
+              <h4>Challenges:</h4>
+              <p>In the beginning, I struggled with the CSS box model, positioning and elements not showing up the way I expected.
+                However, I found myself discovering better coding practices and skills to solve the issues I was having.
+
+               </p>
+
+                <h4>What I learned:</h4>
+                <p>In class, the teacher introduced W3C Markup Validation Service, which I learned is a powerful tool.
+                  By fixing the errors, I became more aware of common mistakes made during coding and how to avoid them.
+                  I also realized the power of Google. Researching problems I'm having during coding
+                  has helped me so much during this process. It led me to great tools and online resources
+                  such as Chrome DevTools, Stack Overflow, CSS Tricks, Mozilla Developer Network, Dev Tips and many others.</p>
+
+                  <h4>Technology used:</h4>
+                  <p>HTML5, CSS3, Media Queries</p>
+
+              </div>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
     </div>
+  </div>
 </div>
+
+
+<!---portfolio modal 2 -->
+
+<div class="modal fade" id="projectModal_2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+            <a href="http://candaceworthen.com/takeapp/">
+              <h2 class="header">Take App</h2>
+              <hr class="portfolio-hr">
+              <img src="css/images/png-mkups/takeapp.png" alt=" " class="portfolio-ex"></a>
+
+              <ul class="list-inline">
+                <li>
+                  <a href="https://github.com/cworthen/takeapp" class="code-link">
+                    <p class="git-link">see code</p>
+                    <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                  </li>
+                <li>
+                  <a href="http://candaceworthen.com/takeapp/" class="code-link">
+                    <p class="web-link">view website</p>
+                     <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                   </li>
+              </ul>
+
+
+              <h4>Summary:</h4>
+              <p class="project-date">Completed: January 2017</p>
+              <p> For this project, I converted the "Take" psd template into a responsive landing page.
+                  I used Bootstrap 4, HTML5 and CSS3 along with Javascript to make the page more
+                  interactive. "Take" is a fictional mobile app designed for taking photos and photo effects.
+                  You can see the original psd
+                  <a href="http://blazrobar.com/free-psd-website-templates/take-a-free-mobile-app-landing-page-psd-template/">
+                    here</a>, created by Blazrobar.
+               </p>
+
+                <h4>Challenges:</h4>
+                <p>Converting the psd to a landing page stretched my ability to pay close attention to detail and also make
+                  sure the page is fully responsive or mobile friendly.</p>
+
+
+                <h4>What I learned:</h4>
+                <p> I learned how to take a design and code it into reality. This project also
+                  strengthened my understanding of Bootstrap.</p>
+
+                <h4>Technology used:</h4>
+                <p>HTML5, CSS3, Bootstrap 4, Media Queries, Javascript
+                </p>
+
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---portfolio modal 3 -->
+
+<div class="modal fade" id="projectModal_3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+          <a href="http://candaceworthen.com/alienabduction/">
+            <h2 class="header">Alien Abduction</h2>
+            <hr class="portfolio-hr">
+            <img src="css/images/png-mkups/alien.png" alt=" " class="portfolio-ex"></a>
+
+            <ul class="list-inline">
+              <li>
+                <a href="https://github.com/cworthen/alienabduction-form" class="code-link">
+                  <p class="git-link">intake form</p>
+                  <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/cworthen/adminpanel" class="code-link">
+                    <p class="git-link">admin panel</p>
+                    <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                  </li>
+            </ul>
+
+            <h4>Summary:</h4>
+            <p class="project-date">Completed: May 2016</p>
+            <p>In this PHP project, the main goal was to create an intake form and use PHP to validate it, build a database to collect submitted data and create an admin panel to manage the data/records.
+              I created the alien abduction intake form using html/css and used conditional statements and functions for validation. Then, I created a database and connected it to the form. In the second half of this project,
+              I built a user-friendly admin panel with a login screen and a separate SCRUD database so I can read, add, delete, update, and search my records without having to login into phpMyAdmin.
+              To view both projects, click on the screenshots below. If you select the admin panel, put in
+              <strong>intern_476</strong> for the username and <strong>password</strong> for the password to view database and project
+              in its entirety.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <div class="col-md-4 col-md-offset-2">
+            <h4>Alien Abduction form</h4>
+            <a href="http://candaceworthen.com/alienabduction/">
+              <img src="css/images/form.jpg" alt="form" class="portfolio-pic"></a>
+
+            </div>
+
+            <div class="col-md-4">
+              <h4>Admin Panel</h4>
+              <a href="http://candaceworthen.com/adminpanel/"><img src="css/images/admin.jpg"  alt=" " class="portfolio-pic"></a>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+              <h4>Challenges:</h4>
+              <p class="project-date">Completed: December 2015</p>
+              <p>
+                One of the main challenges was connecting the database to the form.
+                I had to make sure to include the correct database name,
+                table name and access information. If any of these are misspelled or not accurate,
+                the database won't connect.
+
+              </p>
+
+              <h4>What I learned:</h4>
+              <p>I learned how to set-up and assign variables, create errors messages
+                and make them "sticky" -- for example -- if you fill out the form and forget
+                to put a valid email address, the form will not submit and an error message will appear.
+                I also learned how to sanitize data and help prevent XSS attacks.</p>
+
+                <h4>Technology used:</h4>
+                <p>PHP, HTML5 and CSS3</p>
+
+
+            </div>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---portfolio modal 4 -->
+
+<div class="modal fade" id="projectModal_4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="http://candaceworthen.com/colorgame/">
+              <h2 class="header">RGB Color Game</h2>
+              <hr class="portfolio-hr">
+              <img src="css/images/png-mkups/colorgame.png" alt="colorgame" class="portfolio-ex"></a>
+
+              <ul class="list-inline">
+                <li>
+                  <a href="https://github.com/cworthen/RGB-Color-Game" class="code-link">
+                    <p class="git-link">see code</p>
+                    <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                  </li>
+                <li>
+                  <a href="http://candaceworthen.com/colorgame/" class="code-link">
+                    <p class="web-link">view website</p>
+                     <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                   </li>
+              </ul>
+
+              <h4>Summary:</h4>
+              <p class="project-date">Completed: November 2016</p>
+              <p>
+                The Great RGB Color Game was created as part of the Web Developer Bootcamp by Colt Steele.
+                I continued with the Color game and added several tweaks not included in the course.
+                Aiming to dig deeper into Javascript but also get hands-on experience, this project has
+                really helped further my understanding of DOM Manipulation such as selecting DOM elements, creating
+                event listeners and dynamically changing CSS styles to elements.
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+              <h4>Challenges:</h4>
+              <p>A challenge I had during this project was that my color selection wasn't
+                matching the provided RGB color at the top of the page, causing correct
+                choices to show as "Wrong". The solution was to put spaces after the commas
+                in the RGB color value.</p>
+
+                This made sure that my return value for the randomColor function (shown below):
+
+                <pre class="code">
+
+                  <span class="value">function</span> <span class="randomColor">randomColor</span>(){
+
+                    <span class="comments">//pick a red from 0 - 255</span>
+                    <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
+
+                    <span class="comments">//pick a green from 0 - 255</span>
+                    <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
+
+                    <span class="comments">//pick a method from 0 - 255</span>
+                    <span class="value">var</span> = <span class="math">Math</span>.<span class="method">floor</span>(<span class="math">Math</span>.<span class="method">randon</span>() * <span class="number">256</span>);
+
+                    <span class="value">return</span> <span class="string">"rgb("</span>+ r +<span class="string"> ", " </span>+ g +<span class="string"> ", " </span>+ b + <span class="quotes">")"</span>;
+
+                  }</pre>
+
+
+                  <p>matches what's displayed on top the screen "rgb(255, 105, 98)".
+                  Without the spaces after the commas "rgb(255,105,98)"
+                  the selected square would never match and choices would always show as
+                  wrong.</p>
+
+
+                  <h4>What I learned:</h4>
+                  <p>I learned how to pair logic with advanced DOM Manipulation,
+                    which allowed me to add several features to the game, including
+                    sounds effects and a toggle button to turn sound on/off and a "help" button
+                    for instructions on how to play the game.
+                  </p>
+
+                  <h4>Technology used:</h4>
+                  <p>HTML5, CSS3, Javascript</p>
+
+
+              </div>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---portfolio modal 5 -->
+
+<div class="modal fade" id="projectModal_5" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+          <a href="http://candaceworthen.com/pawsproject/">
+            <h2 class="header">Pawsproject</h2>
+            <hr class="portfolio-hr">
+            <img src="css/images/png-mkups/pawsproject.png" alt=" " class="portfolio-ex"></a>
+
+                          <ul class="list-inline">
+                            <li>
+                              <a href="https://github.com/cworthen/pawsproject" class="code-link">
+                                <p class="git-link">see code</p>
+                                <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                              </li>
+                            <li>
+                              <a href="http://candaceworthen.com/pawsproject/" class="code-link">
+                                <p class="web-link">view website</p>
+                                 <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                               </li>
+                          </ul>
+
+
+            <h4>Summary:</h4>
+            <p class="project-date">Completed: February 2017</p>
+            <p> To learn Wordpress development, I created a custom theme for a fictional pet organization called the Pawsproject.
+               I developed the theme from scratch and incorporated custom post types,
+               page templates, functions, pagination, menus, comments and added controls to the Theme Customizer API to tweak
+               theme settings and widgets.  I also became familiar with using plugins including Advanced Custom
+               Fields. Advanced Custom Fields is a plugin that creates custom fields and present them in a user-friendly interface for
+               clients.
+            </p>
+
+              <h4>Challenges:</h4>
+              <p>I created this theme in a local environment before deploying to a live server. During development,
+                 I came across a few solutions that helped me prevent or quickly fix errors messages. Enabling WP_DEBUG and WP_DEBUG_LOG was very
+                helpful because any PHP code errors or warnings will be displayed in a text file.
+              </p>
+
+              <h4>What I learned:</h4>
+              <p> I learned how to make content dynamic with PHP, debug errors, and utilize plugins.</p>
+
+              <h4>Technology used:</h4>
+              <p>Wordpress, PHP, Advanced Custom Fields, Bootstrap 4, HTML5, CSS3, Media Queries</p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close<i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <!--jQuery links/plugins -->
       <script src="js/jquery-2.2.1.min.js"></script>
       <script src="js/jquery-ui.min.js"></script>
