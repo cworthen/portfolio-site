@@ -1,7 +1,7 @@
 // slides in text when document is loaded
 $(document).ready(function(){
   $('.greeting p').addClass('animated slideInRight');
-  $('greeting p').show();
+  $('.greeting p').show();
 });
 
 
